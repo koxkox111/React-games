@@ -1,0 +1,42 @@
+.Box {
+  padding: 20px;
+  border: 10px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 15vw;
+  height: 20vw;
+
+  &:hover .ImageContainer {
+    height: 65%;
+    width: 65%;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.Back {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  font-size: 1.5vw;
+  }
+
+.Front {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 100%;
+  height: 100%;
+}
+
+.ImageContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  transition: height 1s ease-out, width 1s ease-out;
+
+}

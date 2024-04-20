@@ -1,0 +1,90 @@
+.CharadesContainer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.DifficultyButtons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.DifficultyButtons button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.DifficultyButtons button:hover {
+  background-color: #2980b9;
+}
+
+.Charades {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.Left,
+.Right {
+  width: 45%;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.Left:hover,
+.Right:hover {
+  transform: scale(1.1);
+}
+
+.Score {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.ScoreContainer {
+  display: flex;
+}
+
+.LeftScore,
+.RightScore {
+  margin: 0 10px;
+}
+
+.LeftScore:before,
+.RightScore:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+}
+
+@media (max-width: 768px) {
+
+  .DifficultyButtons {
+    justify-content: space-evenly;
+  }
+  .Left,
+  .Right {
+    margin: 20px 0;
+  }
+
+  .Left:hover,
+  .Right:hover {
+    transform: scale(1);
+  }
+
+  .DifficultyButtons button {
+    margin: 5px 0;
+  }
+}
