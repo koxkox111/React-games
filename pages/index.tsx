@@ -1,10 +1,9 @@
-import Head from 'next/head';
 import { Main } from '../components/Main';
 
-const Home = () => {
+const App = () => {
   return (
     <Main/>
   );
 }
 
-export default Home;
+export default App;

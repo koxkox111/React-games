@@ -1,6 +1,8 @@
-import Head from 'next/head';
+// import "../global.css";
 
 import Charades from '../../components/Charades';
+
+
 const Game = () => {
 
   const newEasyPairs = [];

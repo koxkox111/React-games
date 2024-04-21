@@ -1,7 +1,9 @@
 .CharadesContainer {
   background-color: #f0f0f0;
-  padding: 20px;
-  border-radius: 10px;
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
+  margin: 0px;
 }
 
 .DifficultyButtons {
@@ -34,8 +36,9 @@
 
 .Left,
 .Right {
-  width: 45%;
-  margin: 0 20px;
+  width: 15%;
+  margin: 0 0;
+  padding: 0 0;
   cursor: pointer;
   transition: transform 0.2s ease;
 }
@@ -70,12 +73,12 @@
 }
 
 @media (max-width: 768px) {
-
   .DifficultyButtons {
     justify-content: space-evenly;
   }
   .Left,
   .Right {
+    width: 45%;
     margin: 20px 0;
   }
 
