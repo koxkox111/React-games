@@ -1,0 +1,357 @@
+{
+  "easy": [
+    {
+      "f": "miecz",
+      "s": "szabla"
+    },
+    {
+      "f": "piwo",
+      "s": "wino"
+    },
+    {
+      "f": "kot",
+      "s": "pies"
+    },
+    {
+      "f": "słońce",
+      "s": "księżyc"
+    },
+    {
+      "f": "drzwi",
+      "s": "okno"
+    },
+    {
+      "f": "dom",
+      "s": "mieszkanie"
+    },
+    {
+      "f": "chleb",
+      "s": "masło"
+    },
+    {
+      "f": "samochód",
+      "s": "rower"
+    },
+    {
+      "f": "telefon",
+      "s": "komputer"
+    },
+    {
+      "f": "książka",
+      "s": "zeszyt"
+    },
+    {
+      "f": "ser",
+      "s": "mleko"
+    },
+    {
+      "f": "żaba",
+      "s": "ryba"
+    },
+    {
+      "f": "łąka",
+      "s": "pole"
+    },
+    {
+      "f": "kawa",
+      "s": "herbata"
+    },
+    {
+      "f": "lato",
+      "s": "zima"
+    },
+    {
+      "f": "deszcz",
+      "s": "śnieg"
+    },
+    {
+      "f": "kwiat",
+      "s": "liść"
+    },
+    {
+      "f": "siekiera",
+      "s": "kosa"
+    },
+    {
+      "f": "woda",
+      "s": "ogień"
+    },
+    {
+      "f": "czekolada",
+      "s": "wanilia"
+    },
+    {
+      "f": "dzień",
+      "s": "noc"
+    },
+    {
+      "f": "król",
+      "s": "królowa"
+    },
+    {
+      "f": "sól",
+      "s": "pieprz"
+    },
+    {
+      "f": "góra",
+      "s": "dolina"
+    },
+    {
+      "f": "morze",
+      "s": "ocean"
+    },
+    {
+      "f": "ryż",
+      "s": "makaron"
+    },
+    {
+      "f": "skrzypce",
+      "s": "gitara"
+    },
+    {
+      "f": "kometa",
+      "s": "meteoryt"
+    },
+    {
+      "f": "koń",
+      "s": "krowa"
+    },
+    {
+      "f": "słoń",
+      "s": "zebra"
+    },
+    {
+      "f": "tata",
+      "s": "mama"
+    },
+    {
+      "f": "siostra",
+      "s": "brat"
+    },
+    {
+      "f": "piłka",
+      "s": "balon"
+    },
+    {
+      "f": "samolot",
+      "s": "helikopter"
+    },
+    {
+      "f": "trawa",
+      "s": "koniczyna"
+    },
+    {
+      "f": "krzesło",
+      "s": "stół"
+    },
+    {
+      "f": "jabłko",
+      "s": "gruszka"
+    },
+    {
+      "f": "las",
+      "s": "park"
+    },
+    {
+      "f": "torba",
+      "s": "walizka"
+    },
+    {
+      "f": "drzewo",
+      "s": "krzak"
+    },
+    {
+      "f": "pieśń",
+      "s": "melodia"
+    },
+    {
+      "f": "wyspa",
+      "s": "archipelag"
+    },
+    {
+      "f": "równowaga",
+      "s": "harmonia"
+    },
+    {
+      "f": "tęcza",
+      "s": "promień"
+    },
+    {
+      "f": "prawda",
+      "s": "fałsz"
+    },
+    {
+      "f": "nadzieja",
+      "s": "optymizm"
+    },
+    {
+      "f": "wina",
+      "s": "grzech"
+    },
+    {
+      "f": "czar",
+      "s": "urok"
+    },
+    {
+      "f": "pasmo",
+      "s": "ciąg"
+    },
+    {
+      "f": "piękno",
+      "s": "uroda"
+    },
+    {
+      "f": "wyzwanie",
+      "s": "przeciwność"
+    },
+    {
+      "f": "marzenie",
+      "s": "fantazja"
+    },
+    {
+      "f": "dusza",
+      "s": "duch"
+    },
+    {
+      "f": "przygoda",
+      "s": "eksploracja"
+    },
+    {
+      "f": "przyjaciel",
+      "s": "kolega"
+    },
+    {
+      "f": "jasno",
+      "s": "ciemno"
+    }
+  ],
+  "hard": [
+    {
+      "f": "jazda na łyżwach",
+      "s": "jazda na rolkach"
+    },
+    {
+      "f": "gra na gitarze",
+      "s": "gra na skrzypcach"
+    },
+    {
+      "f": "origami",
+      "s": "kostka Rubika"
+    },
+    {
+      "f": "pływanie",
+      "s": "nurkowanie"
+    },
+    {
+      "f": "rozprawka",
+      "s": "opowiadanie"
+    },
+    {
+      "f": "kształt",
+      "s": "forma"
+    },
+    {
+      "f": "szept",
+      "s": "szmer"
+    },
+    {
+      "f": "ruch",
+      "s": "gest"
+    },
+    {
+      "f": "sukces",
+      "s": "zwycięstwo"
+    },
+    {
+      "f": "błysk",
+      "s": "iskra"
+    },
+    {
+      "f": "tragedia",
+      "s": "dramat"
+    },
+    {
+      "f": "trwoga",
+      "s": "lęk"
+    },
+    {
+      "f": "żal",
+      "s": "smutek"
+    },
+    {
+      "f": "potęga",
+      "s": "siła"
+    },
+    {
+      "f": "ideał",
+      "s": "doskonałość"
+    },
+    {
+      "f": "zazdrość",
+      "s": "nienawiść"
+    },
+    {
+      "f": "zdumienie",
+      "s": "zdziwienie"
+    },
+    {
+      "f": "radość",
+      "s": "euforia"
+    },
+    {
+      "f": "życie",
+      "s": "egzystencja"
+    },
+    {
+      "f": "stosunek",
+      "s": "relacja"
+    },
+    {
+      "f": "tęsknota",
+      "s": "nostalgia"
+    },
+    {
+      "f": "miłość",
+      "s": "sentyment"
+    },
+    {
+      "f": "cierpienie",
+      "s": "ból"
+    },
+    {
+      "f": "co ma piernik do wiatraka",
+      "s": "co ma wisieć nie utonie"
+    },
+    {
+      "f": "bez pracy nie ma kołaczy",
+      "s": "kto rano wstaje, temu Pan Bóg daje"
+    },
+    {
+      "f": "miłość jest ślepa",
+      "s": "trafiło się ślepej kurze ziarno"
+    },
+    {
+      "f": "gdzie kucharek sześć, tam nie ma co jeść",
+      "s": "apetyt rośnie w miarę jedzenia"
+    },
+    {
+      "f": "grosz do grosza i będzie kokosza",
+      "s": "ziarnko do ziarnka, a zbierze się miarka"
+    },
+    {
+      "f": "Mariusz Pudzianowski",
+      "s": "Robert Lewandowski"
+    },
+    { "f": "Messi", "s": "Ronaldo" },
+    { "f": "batman", "s": "superman" },
+    { "f": "zombie", "s": "wampir" },
+    { "f": "bakteria", "s": "wirus" },
+    { "f": "Coca cola", "s": "Pepsi" },
+    { "f": "kebab", "s": "burger" },
+    {
+      "f": "kto nie ryzykuje ten nie pije szampana",
+      "s": "kto gra w karty ten ma łep obdarty"
+    },
+    { "f": "Talmud", "s": "Koran" }
+  ]
+}

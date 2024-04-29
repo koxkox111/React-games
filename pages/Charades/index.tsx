@@ -1,40 +1,40 @@
-// import "../global.css";
-
 import Charades from '../../components/Charades';
-
+import { useState, useEffect } from 'react';
 
 const Game = () => {
+  const [jsonData, setJsonData] = useState(null); 
 
-  const newEasyPairs = [];
-  for (let i = 0; i < 100; i++) {
-    for (let j = 0; j < 100; j++) {
-      const rand1 = Math.floor(Math.random() * 100);
-      const rand2 = Math.floor(Math.random() * 100);
-      newEasyPairs.push([rand1, rand2]);
-    }
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('/api/Charades');
+        const data = await response.json();
+        setJsonData(data);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  if (!jsonData) {
+    return <p>Loading data...</p>; 
   }
 
-  const newMediumPairs = [];
-  for (let i = 0; i < 100; i++) {
-    for (let j = 0; j < 100; j++) {
-      const rand1 = Math.floor(Math.random() * 1000);
-      const rand2 = Math.floor(Math.random() * 1000);
-      newMediumPairs.push([rand1, rand2]);
-    }
-  }
+  const easyPairs = [];
+  const hardPairs = [];
 
-  const newHardPairs = [];
-  for (let i = 0; i < 100; i++) {
-    for (let j = 0; j < 100; j++) {
-      const rand1 = Math.floor(Math.random() * 10000);
-      const rand2 = Math.floor(Math.random() * 10000);
-      newHardPairs.push([rand1, rand2]);
-    }
-  }
+  jsonData.easy.forEach((item) => easyPairs.push(Math.random() > 0.5 ? [item.f, item.s] : [item.s, item.f]));
+  jsonData.hard.forEach((item) => hardPairs.push(Math.random() > 0.5 ? [item.f, item.s] : [item.s, item.f]));
+  
+  easyPairs.sort(() => Math.random() - 0.5);
+  hardPairs.sort(() => Math.random() - 0.5);
+
 
   return (
-    <Charades easyPairs={newEasyPairs} mediumPairs={newMediumPairs} hardPairs={newHardPairs} />
+    <Charades easyPairs={easyPairs} hardPairs={hardPairs} />
   );
-}
+};
 
 export default Game;

@@ -1,4 +1,3 @@
-// pages/_app.tsx
 import '../styles/index.scss';
 
 function MyApp({ Component, pageProps }) {

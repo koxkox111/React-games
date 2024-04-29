@@ -2,15 +2,14 @@ import React, { useState, useEffect } from "react";
 import styles from "./styles.module.scss";
 import Card from "../Card";
 
-const Charades = ({ easyPairs, mediumPairs, hardPairs }) => {
-  
+const Charades = ({ easyPairs, hardPairs }) => {
+
   const [easyIndex, setEasyIndex] = useState(0);
-  const [mediumIndex, setMediumIndex] = useState(0);
   const [hardIndex, setHardIndex] = useState(0);
 
-  const [difficulty, setDifficulty] = useState("medium");
-  const [leftWord, setLeftWord] = useState(0);
-  const [rightWord, setRightWord] = useState(0);
+  const [difficulty, setDifficulty] = useState("easy");
+  const [leftWord, setLeftWord] = useState("");
+  const [rightWord, setRightWord] = useState("");
 
   const [leftPoints, setLeftPoints] = useState(0);
   const [rightPoints, setRightPoints] = useState(0);
@@ -38,15 +37,22 @@ const Charades = ({ easyPairs, mediumPairs, hardPairs }) => {
   };
 
   const giveNextCard = () => {
+    console.log("giveNextCard");
     if (difficulty === "easy") {
+      if(easyIndex >= easyPairs.length) {
+        setLeftWord("Koniec kart do odgadnięcia");
+        setRightWord("Koniec kart do odgadnięcia");
+        return;
+      }
       setLeftWord(easyPairs[easyIndex][0]);
       setRightWord(easyPairs[easyIndex][1]);
       setEasyIndex(easyIndex + 1);
-    } else if (difficulty === "medium") {
-      setLeftWord(mediumPairs[mediumIndex][0]);
-      setRightWord(mediumPairs[mediumIndex][1]);
-      setMediumIndex(mediumIndex + 1);
     } else if (difficulty === "hard") {
+      if(hardIndex >= hardPairs.length) {
+        setLeftWord("Koniec kart do odgadnięcia");
+        setRightWord("Koniec kart do odgadnięcia");
+        return;
+      }
       setLeftWord(hardPairs[hardIndex][0]);
       setRightWord(hardPairs[hardIndex][1]);
       setHardIndex(hardIndex + 1);
@@ -68,7 +74,6 @@ const Charades = ({ easyPairs, mediumPairs, hardPairs }) => {
     <div className={styles.CharadesContainer}>
       <div className={styles.DifficultyButtons}>
         <button onClick={() => setDifficulty("easy")}>EASY</button>
-        <button onClick={() => setDifficulty("medium")}>MEDIUM</button>
         <button onClick={() => setDifficulty("hard")}>HARD</button>
       </div>
 
